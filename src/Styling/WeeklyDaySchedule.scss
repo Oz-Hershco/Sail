@@ -1,0 +1,133 @@
+@import "./Settings.scss";
+
+.WeeklyDaySchedule-Header {
+    padding: 1em;
+    border-bottom: 1px solid lighten($color: $dark-gray, $amount: 35);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WeeklyDaySchedule-Header-Left,
+.WeeklyDaySchedule-Header-Right {
+    // flex-basis: 50%;
+}
+
+.WeeklyDaySchedule-Header-Right {
+    text-align: right;
+}
+
+.WeeklyDaySchedule-title {
+    font-weight: $medium-weight;
+    color: $gray-blue;
+    font-size: $small-font;
+    margin-bottom: 0.5em;
+}
+
+.WeeklyDaySchedule-daterange {
+    font-weight: $light-weight;
+    color: $gray-blue;
+    font-size: $small-font;
+    margin-bottom: 0;
+}
+
+.WeeklyDaySchedule-CalenderSyncSettingsBtn {
+    width: auto;
+    height: 1.7em;
+    cursor: pointer;
+}
+
+.WeeklyDaySchedule-day-btn {
+    background-color: lighten($color: $blue, $amount: 44);
+    padding: 2em 0.5em;
+    cursor: pointer;
+}
+
+.WeeklyDaySchedule-day-btn.WeeklyDaySchedule-day-btn-active,
+.WeeklyDaySchedule-day-btn:hover {
+    background-color: lighten($color: $blue, $amount: 35);
+}
+
+.WeeklyDaySchedule-day-btn .WeeklyDaySchedule-day-btn-date,
+.WeeklyDaySchedule-day-btn .WeeklyDaySchedule-day-btn-day {
+    margin: 0;
+    text-align: center;
+    color: $dark-gray;
+}
+
+.WeeklyDaySchedule-day-btn.WeeklyDaySchedule-day-btn-active .WeeklyDaySchedule-day-btn-date,
+.WeeklyDaySchedule-day-btn.WeeklyDaySchedule-day-btn-active .WeeklyDaySchedule-day-btn-day,
+.WeeklyDaySchedule-day-btn:hover .WeeklyDaySchedule-day-btn-day,
+.WeeklyDaySchedule-day-btn:hover .WeeklyDaySchedule-day-btn-date {
+    color: $blue;
+}
+
+.WeeklyDaySchedule-day-btn .WeeklyDaySchedule-day-btn-day {
+    font-size: $small-font;
+}
+.WeeklyDaySchedule-day-btn .WeeklyDaySchedule-day-btn-date {
+    font-size: $normal-font;
+    font-weight: $medium-weight;
+}
+
+.WeeklyDaySchedule-schedule-selected-date {
+    color: $blue;
+    font-weight: $medium-weight;
+    font-size: $normal-font;
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 1px solid lighten($color: $dark-gray, $amount: 43);
+    margin-bottom: 0.5em;
+}
+
+.WeeklyDaySchedule-schedule-events-timeslot {
+    font-size: $xsmall-font;
+    display: inline-block;
+    padding: 0 1em;
+    font-weight: $medium-weight;
+    color: $dark-gray;
+    margin-bottom: 0;
+}
+
+.WeeklyDaySchedule-schedule-events-emptytimeslot-line {
+    width: 100%;
+    border-bottom: 1px solid lighten($color: $dark-gray, $amount: 35);
+    margin: 0 0.5em;
+}
+
+.WeeklyDaySchedule-schedule-events-filledtimeslot {
+    width: 100%;
+    margin: 0 0.5em;
+    vertical-align: middle;
+    display: table-cell;
+    height: 100%;
+    border-bottom: 1px solid lighten($color: $dark-gray, $amount: 35);
+}
+
+.WeeklyDaySchedule-schedule-events-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 82vh;
+    max-height: 82vh;
+}
+
+#WeeklyDaySchedule-schedule-events-current-time-line {
+    border-bottom: 2px solid $red;
+    margin: 0;
+}
+
+.WeeklyDaySchedule-schedule-events-container table {
+    height: 100%;
+    width: 90%;
+}
+
+.WeeklyDaySchedule-schedule-events-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.WeeklyDaySchedule-schedule-events-container::-webkit-scrollbar-track {
+    background: lighten($color: $blue, $amount: 35);
+}
+
+.WeeklyDaySchedule-schedule-events-container::-webkit-scrollbar-thumb {
+    background: lighten($color: $blue, $amount: 10);
+}

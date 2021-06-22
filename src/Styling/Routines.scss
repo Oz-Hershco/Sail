@@ -1,0 +1,39 @@
+@import "./Settings.scss";
+
+.Routines-UserAlert {
+    color: $gray-blue;
+    font-weight: 300;
+    font-size: $small-font;
+    text-align: center;
+    margin: 4em 0;
+  }
+
+.Routines-Container{
+    margin-bottom: 1.5em;
+    max-height: 23em;
+    overflow-y: auto;
+}
+
+.Routines-Container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Routines-Container::-webkit-scrollbar-track {
+  background: lighten($color: $purple, $amount: 35);
+}
+
+.Routines-Container::-webkit-scrollbar-thumb {
+  background: lighten($color: $purple, $amount: 10);
+}
+
+.no-routines-today {
+  color: lighten($color: $gray-blue, $amount: 50);
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+.some-routines-today {
+  color: $purple;
+  font-weight: 500;
+  margin-bottom: .5em;
+}
+

@@ -1,0 +1,202 @@
+@import "./Settings.scss";
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
+
+.ToDoCard-Container {
+  background-color: $white;
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  flex: 1 1;
+  min-width: 18em;
+}
+
+.ToDoCard-dateandtime,
+.ToDoCard-duration {
+  color: $dark-gray;
+  font-weight: 300;
+  font-size: $small-font;
+  display: inline-block;
+  margin-bottom: 0.5em;
+  margin-top: 0.2em;
+}
+
+.ToDoCard-duration {
+  cursor: pointer;
+}
+
+.ToDoCard-duration-textfield {
+  width: 5em !important;
+  float: right;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.ToDoCard-duration-textfield input {
+  font-size: $normal-font;
+  text-align: center;
+  color: $dark-blue;
+  letter-spacing: 2px;
+}
+
+.ToDoCard-dateandtime,
+.ToDoCard-tag {
+  float: left;
+}
+
+.ToDoCard-dateandtime.ToDoCard-dateandtime-active:hover {
+  color: $blue;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ToDoCard-empty-dateandtime-container {
+  border: 1px dashed $dark-gray;
+  width: 2em;
+  height: 2em;
+  border-radius: 3em;
+  cursor: pointer;
+  margin-bottom: 0.3em;
+}
+
+.ToDoCard-empty-dateandtime-container img {
+  width: auto;
+  height: 1.2em;
+  display: block;
+  margin: 0.3em auto;
+}
+
+.ToDoCard-empty-dateandtime-container:hover {
+  background-color: lighten($color: $gray-blue, $amount: 65);
+}
+
+.ToDoCard-duration,
+.ToDoCard-startTaskBtn,
+.ToDoCard-finishTaskBtn,
+.ToDoCard-options-btn {
+  float: right;
+}
+
+.ToDoCard-options-menu {
+  top: -25px !important;
+}
+
+.ToDoCard-options-menu a,
+.ToDoCard-options-menu a:focus,
+.ToDoCard-options-menu a:hover {
+  background-color: white;
+  color: $gray-blue;
+}
+
+.ToDoCard-options-menu-delete-btn {
+  color: $red !important;
+}
+
+.ToDoCard-options-btn,
+.ToDoCard-options-btn:hover,
+.ToDoCard-options-btn:focus,
+.ToDoCard-options-btn:visited,
+.ToDoCard-options-btn:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ToDoCard-options-btn img {
+  margin-left: 0.8em;
+  cursor: pointer;
+  width: auto;
+  height: 0.24em;
+}
+
+.ToDoCard-title {
+  color: $gray-blue;
+  font-weight: 500;
+  font-size: $normal-font;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.ToDoCard-description {
+  color: $gray-blue;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.ToDoCard-title:focus,
+.ToDoCard-description:focus {
+  cursor: auto;
+}
+
+.ToDoCard-tag,
+.ToDoCard-startTaskBtn,
+.ToDoCard-finishTaskBtn {
+  display: inline-block;
+}
+
+.ToDoCard-tag {
+  display: inline-block;
+  color: $gray-blue;
+  font-weight: 400;
+  font-size: $small-font;
+  background-color: lighten($color: $gray-blue, $amount: 60);
+  padding: 0.2em 1.8em;
+  border-radius: 3em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.ToDoCard-completedIcon {
+  width: auto;
+  height: 1.8em;
+  float: right;
+  cursor: pointer;
+}
+
+.ToDoCard-startTaskBtn {
+  display: inline-block;
+  font-weight: 400;
+  font-size: $small-font;
+  background-color: $gray-blue;
+  border-color: $gray-blue;
+  padding: 0.3em 0.8em;
+}
+
+.ToDoCard-startTaskBtn img,
+.ToDoCard-finishTaskBtn img {
+  width: auto;
+  height: 1.1em;
+  margin-right: 0.5em;
+}
+
+.ToDoCard-startTaskBtn:hover,
+.ToDoCard-startTaskBtn:focus,
+.ToDoCard-startTaskBtn:visited,
+.ToDoCard-startTaskBtn:active,
+.ToDoCard-startTaskBtn:disabled {
+  background-color: $gray-blue !important;
+  border-color: $gray-blue !important;
+}
+
+.ToDoCard-startTaskBtn:disabled {
+  cursor: auto;
+}
+
+.ToDoCard-finishTaskBtn {
+  display: inline-block;
+  font-weight: 400;
+  font-size: $small-font;
+  background-color: transparent;
+  border-color: $blue;
+  padding: 0.3em 0.8em;
+  color: $blue;
+}
+
+.ToDoCard-finishTaskBtn:hover,
+.ToDoCard-finishTaskBtn:focus,
+.ToDoCard-finishTaskBtn:visited,
+.ToDoCard-finishTaskBtn:active {
+  background-color: transparent !important;
+  border-color: $blue !important;
+  color: $blue !important;
+}

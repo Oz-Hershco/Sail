@@ -1,0 +1,47 @@
+@import "./Settings.scss";
+
+.ScheduleDayCard-container {
+  background-color: $white;
+  padding: 1em 1.3em;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin: 1.5em 1em 0 0;
+}
+
+.ScheduleDayCard-header{
+  margin-bottom: 3em;
+}
+
+.ScheduleDayCard-day-title,
+.ScheduleDayCard-date {
+  display: inline-block;
+}
+
+.ScheduleDayCard-day-title{
+  float: left;
+}
+
+.ScheduleDayCard-date {
+  float: right;
+}
+
+.ScheduleDayCard-nothingtoshow {
+  text-align: center;
+  font-weight: 300;
+  color: lighten($color: $gray-blue, $amount: 20);
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
+}
+
+.no-schedule-today {
+  color: lighten($color: $gray-blue, $amount: 20);
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+.some-schedule-today {
+  color: $purple;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}

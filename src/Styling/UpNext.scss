@@ -1,0 +1,16 @@
+@import "./Settings.scss";
+
+
+.UpNext-RightPane-title {
+  color: $gray-blue;
+  font-weight: 400;
+  font-size: $normal-font;
+}
+
+.UpNext-NothingtoShowPrompt {
+  color: $gray-blue;
+  font-weight: 300;
+  font-size: $small-font;
+  text-align: center;
+  margin: 4em 0;
+}

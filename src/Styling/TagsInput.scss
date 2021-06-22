@@ -1,0 +1,51 @@
+@import "./Settings.scss";
+
+.TagsInput-container {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: .5em;
+}
+
+.TagsInput-tags-title{
+  margin-top: 2em;
+  color:$dark-gray;
+  font-weight: 400;
+  font-size: $small-font;
+  margin-bottom: 1em;
+}
+
+.TagsInput-ul {
+  padding: 0.7em 0 0 0;
+  margin: 0;
+}
+
+.TagsInput-ul li {
+  list-style: none;
+  display: inline-block;
+  background-color: lighten($color: $gray-blue, $amount: 60);
+  padding: 0.3em 1.2em;
+  border-radius: 3em;
+  font-size: $small-font;
+  font-weight: 300;
+  margin-left: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+.TagsInput-xBtn {
+  width: auto;
+  height: 0.7em;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.TagsInput-textbox {
+  border: none;
+  margin-left: 0.7em;
+  margin-bottom: 0.7em;
+  color:$dark-gray;
+  font-weight: 300;
+}
+
+.TagsInput-textbox::placeholder {
+  color: lighten($color: $gray-blue, $amount: 50);
+}

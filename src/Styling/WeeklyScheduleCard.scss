@@ -1,0 +1,41 @@
+@import "./Settings.scss";
+
+.WeeklyScheduleCards-Wrapper{
+  max-height: 35em;
+  overflow-y: auto;
+}
+
+.WeeklyScheduleCards-Wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.WeeklyScheduleCards-Wrapper::-webkit-scrollbar-track {
+  background: lighten($color: $purple, $amount: 35);
+}
+
+.WeeklyScheduleCards-Wrapper::-webkit-scrollbar-thumb {
+  background: lighten($color: $purple, $amount: 10);
+}
+
+.WeeklyScheduleCard-container {
+  background-color: $white;
+  padding: 1em 1.3em;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1.5em;
+}
+
+
+.WeeklyScheduleCard-title {
+  font-weight: 500;
+  font-size: $normal-font;
+  color: $gray-blue;
+  margin-bottom: 0;
+}
+
+.WeeklyScheduleCard-week-daterange {
+  font-weight: 300;
+  color: $dark-gray;
+}

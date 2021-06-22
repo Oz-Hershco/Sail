@@ -1,0 +1,215 @@
+@import "./Settings.scss";
+
+.TasksPage-Container {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+
+.TasksPage-Main-Container{
+  flex:3.5;
+}
+
+.TasksPage-Dashboard-Container {
+  height: 100vh;
+  background-color: $light-gray;
+  padding: 2em 2em;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.TasksPage-Dashboard-Container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.TasksPage-Dashboard-Container::-webkit-scrollbar-track {
+  background: lighten($color: $purple, $amount: 35);
+}
+
+.TasksPage-Dashboard-Container::-webkit-scrollbar-thumb {
+  background: lighten($color: $purple, $amount: 10);
+}
+
+.TasksPage-Week-Navigation-Dates {
+  display: inline-block;
+  margin: 0 1em 1em 1em;
+  color: #404e59;
+  font-size: 1.1em;
+  vertical-align: top;
+  text-align: center;
+  min-width: 12em;
+}
+
+.TasksPage-Week-Navigation-Left-Btn,
+.TasksPage-Week-Navigation-Right-Btn {
+  display: inline-block;
+  width: auto;
+  height: 1.3em;
+  cursor: pointer;
+}
+
+.TasksPage-Week-Navigation-Left-Btn {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.TasksPage-Week-Navigation-ThisWeek-Btn{
+  margin-left: 1em;
+  color: $blue !important;
+  background-color: transparent !important;
+  border-color: $blue !important;
+  font-size: $small-font !important;
+  font-weight: 400 !important;
+}
+
+.TasksPage-Week-Navigation-ThisWeek-Btn:hover{
+  color: $white !important;
+  background-color: $blue !important;
+}
+
+.TasksPage-Week-Navigation-ThisWeek-Btn:active{
+  color: $white !important;
+  background-color: darken($color: $blue, $amount: 10) !important;
+}
+
+.TasksPage-Week-Navigation-ThisWeek-Btn-Active{
+  margin-left: 1em;
+  color: #ebeef2 !important;
+  background-color: $blue !important;
+  border-color: $blue !important;
+  font-size: $small-font !important;
+  font-weight: 400 !important;
+}
+
+.TasksPage-Title {
+  font-weight: 600;
+  color: $black;
+  font-size: $big-font;
+}
+
+.TasksPage-Filter-Item {
+  color: $dark-gray;
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 3em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.TasksPage-Filter-Item.TasksPage-Filter-Item-Active {
+  color: $blue;
+  text-decoration: none;
+  cursor: auto;
+}
+
+.TasksPage-RightPane-Container {
+  margin-bottom: 1.5em;
+  flex: 1;
+  min-width: 20em;
+}
+
+.TasksPage-RightPane-hr,
+.TasksPage-LeftPane-hr {
+  background-color: $dark-gray;
+  opacity: 0.2;
+}
+
+.TasksPage-Logo {
+  width: auto;
+  height: 7.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.TasksPage-LeftPane-Container {
+  height: 100vh;
+  flex: 1;
+  min-width: 20em;
+}
+
+.TasksPage-LeftPane-title {
+  color: $gray-blue;
+  font-weight: 400;
+  font-size: $normal-font;
+  margin-bottom: 0;
+  margin-left: 0.5em;
+}
+.TasksPage-SettingsBtn {
+  width: auto;
+  height: 1em;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+.TasksPage-profileBtn {
+  padding: 0 !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.TasksPage-profileBtn::after {
+  border: none !important;
+  content: url("/Assets/Images/chev-down.png");
+}
+
+.TasksPage-profileBtnPic {
+  width: 3em;
+  height: 3em;
+  object-fit: cover;
+  object-position: 0 0;
+  border-radius: 4em;
+  border: 0.15em solid $white;
+}
+
+.TasksPage-profileDropDownControl {
+  float: right;
+}
+
+.TasksPage-profileDropDownMenu {
+  left: -7em !important;
+  top: 0.5em !important;
+  padding: 0.7em 0.5em 0.7em 0.5em;
+}
+
+.TasksPage-profileSettingsItem {
+  background-image: url("/Assets/Images/profiledark_icon.png");
+  background-size: 1em;
+  background-position-y: center;
+  background-position-x: 1em;
+  background-repeat: no-repeat;
+  padding-left: 3em;
+  font-weight: 300;
+  color: $gray-blue;
+}
+
+.TasksPage-profileLogoutItem {
+  text-align: center;
+  text-decoration-line: underline;
+  font-weight: 300;
+  color: $gray-blue;
+}
+
+.TasksPage-profileSettingsItem:hover,
+.TasksPage-profileLogoutItem:hover,
+.TasksPage-profileSettingsItem:focus,
+.TasksPage-profileLogoutItem:focus {
+  background-color: transparent;
+  font-weight: 300;
+  color: $gray-blue;
+}
+
+.TasksPage-profileLogoutItem:focus {
+  text-decoration-line: underline;
+}
+
+.TasksPage-profileLogoutItem:hover {
+  text-decoration-line: underline;
+}
+
+.TasksPage-profileDropDownHr {
+  margin-bottom: 0.5em;
+}
+
+.TasksPage-Info-Notification {
+  background-color: red;
+}

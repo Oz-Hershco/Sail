@@ -1,0 +1,73 @@
+@import "./Settings.scss";
+
+.SignUpPage {
+    background-image: -webkit-linear-gradient(165deg, $purple 50%, $white 50%);
+    height: 100vh;
+    padding-top: 10em;
+}
+
+.SignUpPage-Logo {
+    width: auto;
+    height: 19em;
+    margin-top: 7em;
+}
+
+.SignUpPage-title {
+    color: $light-gray;
+    font-weight: 400;
+    font-size: $big-title;
+    text-align: center;
+    margin-bottom: 0.3em;
+    animation-name: SignUpPageTitleAnimation;
+    animation-duration: .7s;
+}
+
+@keyframes SignUpPageTitleAnimation {
+    from {
+        margin-right: -2em;
+        opacity: 0;
+    }
+    to {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+.SignUpPage-textfield-label {
+    color: $light-gray;
+    font-weight: 300;
+    font-size: $normal-font;
+}
+
+.SignUpPage-textfield,
+.SignUpPage-SignUpBtn,
+.SignUpPage-LoginwithgoogleBtn {
+    height: 3em;
+    color: $dark-blue !important;
+}
+
+.SignUpPage-textfield::placeholder {
+    color: lighten($color: $gray-blue, $amount: 50%);
+}
+
+.SignUpPage-SignUpBtn {
+    color: $light-gray !important;
+    background-color: $dark-blue !important;
+    border-color: $dark-blue !important;
+    font-size: $normal-font !important;
+    font-weight: 400 !important;
+    margin-top: 2.5em;
+}
+
+.SignUpPage-hr {
+    background-color: $light-gray;
+    opacity: 0.3;
+    margin-top: 2em;
+}
+
+.SignUpPage-loginlink,
+.SignUpPage-loginlink:hover {
+    color: $light-gray;
+    font-size: $small-font;
+    font-weight: 400;
+}

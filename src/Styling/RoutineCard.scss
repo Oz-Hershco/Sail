@@ -1,0 +1,37 @@
+@import "./Settings.scss";
+
+.RoutineCard-container {
+  background-color: lighten($color: $dark-gray, $amount: 95);
+  padding: 1.2em 1em;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.RoutineCard-time,
+.RoutineCard-duration {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.RoutineCard-time {
+  float: left;
+  color:$dark-gray;
+  font-size: $small-font;
+}
+
+.RoutineCard-duration {
+    float: right;
+    color:$dark-gray;
+    font-size: $small-font;
+  }
+
+  .RoutineCard-title{
+    color:$gray-blue;
+  font-size: $small-font;
+  font-weight: 500;
+  margin-bottom: 0;
+}

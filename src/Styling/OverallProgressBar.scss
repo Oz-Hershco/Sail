@@ -1,0 +1,33 @@
+@import "./Settings.scss";
+
+.OverallProgressBar-Bar-Container{
+    background-color: $white;
+    padding: 1em 0 1em 1em;
+}
+
+.OverallProgressBar-Bar {
+  height: 0.65em;
+  margin-top: 0.4em;
+}
+
+.OverallProgressBar-Bar-Header-Wrapper {
+  display: inline-block;
+  width: 94%;
+}
+
+.OverallProgressBar-Bar .progress-bar {
+  background-color: $blue;
+}
+
+.OverallProgressBar-Bar-Percentage,
+.OverallProgressBar-Bar-title {
+  color: $dark-gray;
+  font-size: $small-font;
+  font-weight: 300;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.OverallProgressBar-Bar-Percentage {
+  margin-left: 1em;
+}

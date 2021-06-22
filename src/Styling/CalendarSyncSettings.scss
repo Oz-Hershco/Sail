@@ -1,0 +1,297 @@
+@import "./Settings.scss";
+
+.CalendarSyncSettings-modal {
+    width: 27em;
+}
+
+.CalendarSyncSettings-body {
+    padding: 1em 0;
+    min-height: 17.5em;
+}
+
+.CalendarSyncSettings-header {
+    margin: 0.3em 1.5em;
+}
+
+.CalendarSyncSettings-title {
+    display: inline-block;
+    font-weight: 500;
+    color: $gray-blue;
+    font-size: $normal-font;
+}
+
+.CalendarSyncSettings-xButton {
+    width: auto;
+    height: 0.8em;
+    cursor: pointer;
+    float: right;
+}
+
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-accounts,
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-calendarsync {
+    border: none;
+    font-weight: $regular-weight;
+    padding-bottom: 1em;
+    font-size: $small-font;
+}
+
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-accounts,
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-calendarsync {
+    color: $dark-gray;
+}
+
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-accounts.active,
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-calendarsync.active {
+    border-bottom: 2px solid $purple;
+    color: $purple;
+    font-weight: $medium-weight;
+}
+
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-accounts.disabled,
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-calendarsync.disabled {
+    opacity: 0.25;
+}
+
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-accounts:focus,
+.CalendarSyncSettingsTabMenu #CalendarSyncSettingsTabMenu-tab-calendarsync:focus {
+    outline: none;
+}
+
+.CalendarSyncSettings-Google-Authorize-Btn,
+.CalendarSyncSettings-Google-Authorize-Btn:hover,
+.CalendarSyncSettings-Google-Authorize-Btn:active,
+.CalendarSyncSettings-Google-Authorize-Btn:focus {
+    background-color: $light-gray !important;
+    border-color: $light-gray !important;
+    display: block;
+    margin: 0em auto 1em auto;
+    padding: 0.5em 2.5em;
+}
+
+.CalendarSyncSettings-Authorized-Accounts-Container {
+    padding: 0 3em;
+    margin-top: 2em;
+}
+
+.CalendarSyncSettings-Google-Authorize-Text,
+.CalendarSyncSettings-Google-Authorized-Text {
+    color: $dark-blue !important;
+    font-weight: $medium-weight !important;
+    font-size: $small-font !important;
+    margin: 0;
+    display: inline-block;
+}
+
+.CalendarSyncSettings-Google-Authorize-Btn-Icon,
+.CalendarSyncSettings-Google-Authorized-Icon {
+    width: auto;
+    height: 1.3em;
+    margin: 0 0 0.2em 0;
+}
+
+.CalendarSyncSettings-Authorization-Info-Text {
+    text-align: center;
+    color: $dark-blue;
+    font-weight: $regular-weight;
+    font-size: $small-font;
+    padding: 2em 4em 1em 4em;
+    margin: 0;
+}
+
+.CalendarSyncSettings-Authorization-Info-Sail-Text {
+    font-weight: $semibold-weight;
+}
+.CalendarSyncSettings-Authorization-Info-Icon {
+    width: auto;
+    height: 1.7em;
+    margin-bottom: 0.2em;
+}
+
+.CalendarSyncSettings-Google-Authorized-Settings-Actions-Wrapper {
+    margin-top: 1em;
+}
+
+.CalendarSyncSettings-Google-Account-Name {
+    margin-bottom: 0;
+    border: 1px solid #ced4da;
+    border-radius: 0.25em;
+    padding: 0.5em 1em;
+    font-size: $small-font;
+    font-weight: $light-weight;
+    color: $dark-gray;
+}
+
+.CalendarSyncSettings-Google-Account-Remove-Btn {
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: $small-font;
+    font-weight: $medium-weight;
+    color: $red;
+    cursor: pointer;
+    text-align: left;
+}
+
+.CalendarSyncSettings-Sync-Options-Wrapper {
+    padding: 0 2em;
+    margin-top: 2em;
+}
+
+.CalendarSyncSettings-Sync-Option-Container {
+    margin-bottom: 1.3em;
+}
+
+.CalendarSyncSettings-Sync-Option-Text {
+    color: $gray-blue;
+    font-weight: $medium-weight;
+    font-size: $small-font;
+    margin: 0 0.5em 0 0;
+    display: inline-block;
+}
+
+.CalendarSyncSettings-Sync-Option-Container .Sail-info-icon {
+    height: 0.9em;
+}
+
+.CalendarSyncSettings-Sync-Option-Switch {
+    margin-top: 0.2em;
+}
+
+.CalendarSyncSettings-Sync-Option-Switch .custom-control-label::before {
+    height: 0.8em;
+    width: 2.2em;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: lighten($color: $dark-gray, $amount: 30) !important;
+    border-color: lighten($color: $dark-gray, $amount: 30) !important;
+}
+
+.CalendarSyncSettings-Sync-Option-Switch .custom-control-label::after {
+    top: calc(0.09em);
+    left: calc(-2.6rem + 2px);
+    width: calc(1.4em - 4px);
+    height: calc(1.4em - 5px);
+    border-radius: 1.4rem;
+    background-color: $dark-gray;
+}
+
+.CalendarSyncSettings-Sync-Option-Switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: $blue;
+    transform: translateX(1.6em);
+}
+
+.CalendarSyncSettings-Sync-Option-Switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: lighten($color: $blue, $amount: 30) !important;
+    border-color: lighten($color: $blue, $amount: 30) !important;
+}
+
+.CalendarSyncSettings-Sync-Option-Switch .custom-control-input:disabled ~ .custom-control-label::before {
+    opacity: 0.5;
+    background-color: lighten($color: $dark-gray, $amount: 30) !important;
+    border-color: lighten($color: $dark-gray, $amount: 30) !important;
+}
+
+.CalendarSyncSettings-Sync-Option-Switch .custom-control-input:disabled ~ .custom-control-label::after {
+    background-color: lighten($color: $dark-gray, $amount: 30);
+    border-color: lighten($color: $dark-gray, $amount: 30);
+}
+
+.CalendarSyncSettings-Sync-Option-Config-Container {
+    padding: 0 1.6em;
+}
+
+.CalendarSyncSettings-Sync-Option-Config-Label {
+    margin: 0.5em 0;
+    font-size: $small-font;
+    font-weight: $light-weight;
+}
+
+.CalendarSyncSettings-Calendars-List-Container {
+    padding: 1em;
+    border: 1px solid $light-gray;
+    max-height: 5.5em;
+    overflow-y: auto;
+}
+
+.CalendarSyncSettings-Calendars-List-Container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.CalendarSyncSettings-Calendars-List-Container::-webkit-scrollbar-track {
+    background: lighten($color: $blue, $amount: 35);
+}
+
+.CalendarSyncSettings-Calendars-List-Container::-webkit-scrollbar-thumb {
+    background: lighten($color: $blue, $amount: 10);
+}
+
+.CalendarSyncSettings-Calendar-List-Item-Checkbox,
+.CalendarSyncSettings-Calendar-List-Item-Text {
+    display: inline-block;
+    font-size: $small-font;
+}
+
+.CalendarSyncSettings-Calendar-List-Item-Text {
+    margin-bottom: 0.5em;
+}
+
+.CalendarSyncSettings-Primary-Calendar-Tag {
+    display: inline-block;
+    margin: 0 0 0 .5rem;
+    padding: 0.1em .8em 0.15em .8em;
+    font-size: $xxsmall-font;
+    font-weight: $medium-weight;
+    background-color: $purple;
+    color: $white;
+    border-radius: 5px;
+}
+
+.CalendarSyncSettings-Calendar-List-Item-Checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.CalendarSyncSettings-Calendar-List-Item-Checkbox
+    .custom-control-input:disabled:checked
+    ~ .custom-control-label::before {
+    background-color: $blue;
+    border-color: $blue;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.CalendarSyncSettings-Calendar-List-Item-Checkbox .custom-control-input ~ .custom-control-label::before {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.CalendarSyncSettings-Calendar-List-Item-Checkbox
+    .custom-control-input:disabled:checked
+    ~ .custom-control-label::before {
+    opacity: 0.5;
+}
+
+.CalendarSyncSettings-Sync-Calendar-Select-Control {
+    background-image: url("/Assets/Images/chev-down.png");
+    background-size: 0.8em;
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: center;
+    font-size: $small-font;
+    border: 1px solid $light-gray;
+}
+
+.CalendarSyncSettings-Sync-Calendar-Select-Control:focus {
+    border: 1px solid $light-gray;
+}
+
+// .CalendarSyncSettings-Sync-Save-Button {
+//     color: $light-gray !important;
+//     background-color: $purple !important;
+//     border-color: $purple !important;
+//     font-size: $normal-font !important;
+//     font-weight: $light-weight !important;
+//     height: 2.5em;
+//     display: block;
+//     margin: 2em auto 0.5em auto;
+//     padding: 0 2em;
+// }
+
+// .CalendarSyncSettings-Sync-Save-Button:disabled {
+//     cursor: auto;
+// }

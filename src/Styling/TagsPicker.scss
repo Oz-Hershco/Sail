@@ -1,0 +1,81 @@
+@import "./Settings.scss";
+
+.TagsPicker-ul {
+  padding: 0.5em 0 0 0;
+  margin: 0;
+}
+
+.TagsPicker-ul li {
+  list-style: none;
+  display: inline-block;
+  background-color: lighten($color: $gray-blue, $amount: 60);
+  padding: 0.3em 1.2em;
+  border-radius: 3em;
+  font-size: $small-font;
+  font-weight: 300;
+  margin-left: 0.7em;
+  margin-bottom: 0.7em;
+  cursor: pointer;
+}
+
+.TagsPicker-xBtn {
+  width: auto;
+  height: 0.7em;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.TagsPicker-textbox {
+  color: $dark-blue !important;
+  font-weight: 400;
+  font-size: $normal-font;
+  padding: 0 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  height: 3em;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.TagsPicker-NewTag-Container{
+  margin-bottom: 1em;
+  height: 3em;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: $normal-font;
+}
+
+.TagsPicker-textbox::placeholder {
+  color: lighten($color: $gray-blue, $amount: 50%);
+}
+
+.TagsPicker-Popover {
+  width: 17em;
+  top: -0.5em;
+  left: -2em;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.TagsPicker-Popover-Label {
+  color: lighten($color: $dark-gray, $amount: 30%);
+  font-weight: 400;
+  font-size: $normal-font;
+  margin-bottom: 0.5em;
+}
+
+.TagsPicker-Popover-ExistingTags-Container {
+  height: max-content;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: $white;
+}
+
+
+.TagsPicker-Popover-ExistingTags-Container .bs-popover-auto[x-placement^=top]>.arrow::after, .bs-popover-top>.arrow::after{
+}

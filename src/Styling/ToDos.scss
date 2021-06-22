@@ -1,0 +1,19 @@
+@import "./Settings.scss";
+
+.ToDos-container {
+  padding: 1em 1.3em;
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+}
+
+.ToDos-cards-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ToDos-nothingtoshow{
+    text-align: center;
+    font-weight: 300;
+    color: $gray-blue;
+    margin-top: 1em;
+}

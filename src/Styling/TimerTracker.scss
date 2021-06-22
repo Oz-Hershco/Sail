@@ -1,0 +1,20 @@
+@import "./Settings.scss";
+
+.Timer-time-text {
+  color: $gray-blue;
+  font-size: $xbig-font;
+  text-align: center;
+  margin-top: .3em;
+}
+
+.TimerTracker-CircularProgressbar{
+    width: 10em;
+    margin: 0 auto;
+    display: block;
+    background-image: url('/Assets/Images/animatedlogo.gif');
+    background-repeat: no-repeat;
+    background-size: 8em;
+    background-position-x: center;
+    background-position-y: 1em;
+    padding: .5em;
+}

@@ -1,0 +1,224 @@
+//Theme Colors
+
+$white: #ffffff;
+$black: #000000;
+$dark-blue: #242259;
+$gray-blue: #404e59;
+$blue: #579ab4;
+$red: #ff8e76;
+$purple: #6573bf;
+// $blue: #03A6A6;
+// $red: #FE736C;
+// $purple: #EC5A31;
+$dark-gray: #7b848c;
+$light-gray: #ebeef2;
+
+//Theme font-size
+$big-title: 4.5em;
+
+$xxsmall-font: 0.6em;
+$xsmall-font: 0.8em;
+$small-font: 0.9em;
+$normal-font: 1.1em;
+$med-font: 1.7em;
+$big-font: 2em;
+$xbig-font: 2.7em;
+
+//Theme font-weights
+
+$light-weight: 300;
+$regular-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+
+//General Settings
+
+.react-datepicker {
+  width: max-content;
+}
+
+input:focus,
+.btn,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.Sail-info-icon {
+  width: auto;
+  height: 1.2em;
+  cursor: pointer;
+}
+
+// .Sail-info-tooltip{
+// }
+
+.Sail-info-tooltip.show{
+  opacity: 1;
+}
+
+.Sail-info-tooltip .tooltip-inner{
+  background-color: #242259;
+  font-size: $normal-font;
+  max-width: 24em;
+  padding: .5em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Sail-info-tooltip .bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before{
+  border-right-color: #242259;
+}
+.Sail-info-tooltip .bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before{
+  border-left-color: #242259;
+}
+.Sail-info-tooltip .bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before{
+  border-bottom-color: #242259;
+}
+.Sail-info-tooltip .bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before{
+  border-top-color: #242259;
+}
+
+//Notifications styles based on react-notifications-component 
+.Sail-Notification-Info .notification-item{
+background-color: lighten($color: $gray-blue, $amount: 10);
+border-color:$gray-blue;
+}
+
+.Sail-Notification-Info .notification-item .notification-close{
+  background-color: $gray-blue;
+  }
+  
+
+  .Sail-Notification-UndoAction-Button-Icon{
+    width: auto;
+    height: 1.1em;
+    float: right;
+    margin-top: 1.5em;
+    margin-right: .5em;
+  }
+
+  .Sail-Notification-UndoAction-Button-Text{
+    float: right;
+    margin-bottom: .5em;
+    margin-top: 1.3em;
+    margin-right: -1em;
+    text-decoration: underline;
+  }
+
+//Time picker pop up styles
+
+.TimePicker-duration-textfield-popup {
+  max-width: 8em;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-input {
+  font-size: $normal-font;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-input.rc-time-picker-panel-input-invalid {
+  border-color: $red;
+  color: $red;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select-option-selected {
+  background-color: lighten($color: $purple, $amount: 35);
+  color: $purple;
+  font-weight: $bold-weight;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select {
+  width: 50%;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select li {
+  font-size: $normal-font;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select li:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select li:hover {
+  background-color: lighten($color: $purple, $amount: 30);
+  color: $purple;
+  font-weight: $medium-weight;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select::-webkit-scrollbar {
+  width: 5px;
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select::-webkit-scrollbar-track {
+  background: lighten($color: $purple, $amount: 40);
+}
+
+.TimePicker-duration-textfield-popup .rc-time-picker-panel-select::-webkit-scrollbar-thumb {
+  background: lighten($color: $purple, $amount: 10);
+}
+
+/*Specific react-datepicker class settings modifications*/
+.TasksPage-Container .react-datepicker__tab-loop {
+  display: inline-block;
+}
+
+.TasksPage-Container .react-datepicker__tab-loop * {
+  font-family: "Quicksand", sans-serif;
+}
+
+.TasksPage-Container .react-datepicker__header {
+  background-color: $light-gray !important;
+}
+.TasksPage-Container .react-datepicker__navigation {
+  outline: none !important;
+}
+
+.TasksPage-Container .react-datepicker__header * {
+  font-weight: 300 !important;
+}
+
+.TasksPage-Container .react-datepicker__time-list-item.react-datepicker__time-list-item--selected,
+.TasksPage-Container .react-datepicker__day.react-datepicker__day--selected,
+.TasksPage-Container .react-datepicker__time-list-item.react-datepicker__time-list-item--selected:focus,
+.TasksPage-Container .react-datepicker__day.react-datepicker__day--selected:focus,
+.TasksPage-Container .react-datepicker__time-list-item.react-datepicker__time-list-item--selected:active,
+.TasksPage-Container .react-datepicker__day.react-datepicker__day--selected:active,
+.TasksPage-Container .react-datepicker__time-list-item.react-datepicker__time-list-item--selected:visited,
+.TasksPage-Container .react-datepicker__day.react-datepicker__day--selected:visited {
+  background-color: $blue !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: $white !important;
+}
+
+.TasksPage-Container .react-datepicker__day.react-datepicker__day--today {
+  color: $blue !important;
+}
+
+.TasksPage-Container .react-datepicker__day--selected.react-datepicker__day--today {
+  color: $white !important;
+}
+
+
+.TasksPage-Container .react-datepicker__day.react-datepicker__day--keyboard-selected.react-datepicker__day--today {
+  color: $white !important;
+  background-color: $blue !important;
+}
+
+.TasksPage-Container .react-datepicker__time-list::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.TasksPage-Container .react-datepicker__time-list::-webkit-scrollbar-track {
+  background: lighten($color: $blue, $amount: 35) !important;
+}
+
+.TasksPage-Container .react-datepicker__time-list::-webkit-scrollbar-thumb {
+  background: lighten($color: $blue, $amount: 10) !important;
+}
+
+.error-text{
+  color:$red;
+}

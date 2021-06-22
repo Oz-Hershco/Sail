@@ -1,0 +1,63 @@
+@import "./Settings.scss";
+
+.WeeklyDayEventCard-Container {
+    background-color: lighten($color: $dark-gray, $amount: 45);
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.2);
+    height: 98%;
+    position: relative;
+    border-radius: 4px;
+}
+
+.WeeklyDayEventCard-Header {
+    padding: 0.5em 0.5em 3.5em 1em;
+}
+
+.WeeklyDayEventCard-title {
+    font-size: $xsmall-font;
+    font-weight: $medium-weight;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.WeeklyDayEventCard-duration {
+    font-size: $xsmall-font;
+    font-weight: $light-weight;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.WeeklyDayEventCard-Footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: .5em;
+}
+
+.WeeklyDayEventCard-eventType-container {
+    background-color: lighten($color: $dark-blue, $amount: 70);
+    width: 1.9em;
+    height: 1.9em;
+    border-radius: 10em;
+    float: left;
+}
+
+.WeeklyDayEventCard-status-icon{
+    float: right;
+    width: auto;
+    height: 1.9em;
+}
+
+.WeeklyDayEventCard-eventType-container .WeeklyDayEventCard-routine-icon {
+    width: auto;
+    height: 1.2em;
+    margin: 0.3em;
+}
+
+
+.WeeklyDayEventCard-eventType-container .WeeklyDayEventCard-task-icon {
+    width: auto;
+    height: 1em;
+    margin: 0.5em;
+}

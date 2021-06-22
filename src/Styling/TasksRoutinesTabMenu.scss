@@ -1,0 +1,55 @@
+@import "./Settings.scss";
+
+.TasksRoutinesTabMenu .tab-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.TasksRoutinesTabMenu .tab-content::-webkit-scrollbar-track {
+  background: lighten($color: $purple, $amount: 40);
+}
+
+.TasksRoutinesTabMenu .tab-content::-webkit-scrollbar-thumb {
+  background: lighten($color: $purple, $amount: 10);
+}
+
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-tasks,
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-routines {
+  border: none;
+  font-weight: $regular-weight;
+  padding-bottom: 1em;
+}
+
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-tasks {
+  color: $purple;
+  background-image: url("/Assets/Images/tasks_icon.png");
+  background-repeat: no-repeat;
+  background-position-y: 0.8em;
+  background-position-x: 0.8em;
+  background-size: 1.2em;
+  padding-left: 2em;
+}
+
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-routines {
+  color: $dark-blue;
+  background-image: url("/Assets/Images/routines_icon.png");
+  background-repeat: no-repeat;
+  background-position-y: 0.8em;
+  background-position-x: 0.6em;
+  background-size: 1.3em;
+  padding-left: 1.5em;
+}
+
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-tasks.active {
+  border-bottom: 2px solid $purple;
+  color: $purple;
+}
+
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-routines.active {
+  border-bottom: 2px solid $dark-blue;
+  color: $dark-blue;
+}
+
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-tasks:focus,
+.TasksRoutinesTabMenu #TasksRoutinesTabMenu-tab-routines {
+  outline: none;
+}

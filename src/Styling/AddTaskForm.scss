@@ -1,0 +1,96 @@
+@import "./Settings.scss";
+
+.AddTaskForm-Content-Container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.AddTaskForm-Header{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.AddTaskForm-title {
+    color: $gray-blue;
+    font-weight: 400;
+    font-size: $normal-font;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.AddTaskForm-Header .Sail-info-icon{
+    margin-left: .5em;
+}
+
+.AddTaskForm-textfield,
+.AddTaskForm-description-textfield,
+.AddTaskForm-tagselect {
+    color: $dark-blue !important;
+}
+
+.AddTaskForm-textfield,
+.AddTaskForm-tagselect,
+.AddTaskForm-AddTaskBtn,
+.AddTaskForm-duration-textfield input {
+    height: 3em;
+}
+
+.AddTaskForm-description-textfield {
+    resize: none !important;
+    height: 8em !important;
+}
+
+.AddTaskForm-duration-label {
+    display: inline-block;
+    margin-left: 1.5em;
+    margin-top: 0.7em;
+}
+
+.AddTaskForm-duration-textfield {
+    width: 8em !important;
+    margin-bottom: 1em;
+    float: right;
+    border: 1px solid $light-gray;
+    border-radius: 0.25rem;
+}
+
+.AddTaskForm-duration-textfield input {
+    font-size: $small-font;
+    text-align: center;
+    color: $dark-blue;
+    letter-spacing: 2px;
+}
+
+.AddTaskForm-duration-xBtn {
+    position: absolute;
+    right: 0.7em;
+    top: 0.5em;
+    width: auto;
+    height: 1em;
+    background-color: lighten($color: $purple, $amount: 35);
+    border-radius: 16em;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.AddTaskForm-textfield::placeholder,
+.AddTaskForm-description-textfield::placeholder {
+    color: lighten($color: $gray-blue, $amount: 50%);
+}
+
+.AddTaskForm-AddTaskBtn {
+    color: $light-gray !important;
+    background-color: $purple !important;
+    border-color: $purple !important;
+    font-size: $normal-font !important;
+    font-weight: 400 !important;
+}
+
+.AddTaskForm-AddTaskBtn:disabled{
+    cursor: auto;
+    }
+    

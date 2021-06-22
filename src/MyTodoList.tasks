@@ -1,0 +1,47 @@
+Features:
+    ☐ Design and implement new pop-ups for user for adding a task/routine and 2 action button for adding each of them. 
+    ☐ When a new task/routine is being added, make sure the container automatically scrolls to where the new task has been added with a blinking effect
+    ☐ Undo tag removal
+    ☐ Loader when updating user data in profile 
+    ☐ Add "Save as default" for view filters(To Do/Completed/All etc)
+    ☐ Draggable weekly schedule items 
+    ☐ Unscheduled/Unfinished tasks tray for use to keep track of postponed items
+    
+
+Issues:
+    ✔ Interval causes too many renders while timer is active. Need to find the cause or find an alternative. @done (1/19/2020, 9:15:22 PM)
+    ✔ Tasks in weekly schedule are showing up even if they're not in the right weekly @done (4/10/2020, 6:20:06 PM)
+    ✔ Tasks and routines in weekly schedule are not sorted based on start time @done (4/11/2020, 8:37:15 PM)
+    ✔ One there's one tag there's no option to add a new task for some reason. @done (1/31/2020, 9:45:28 AM)
+    ✔ weekly schedule week dates are not showing a correct number when one of the days is a different month(January 32nd case) @done (4/9/2020, 2:35:15 PM)
+    ✔ Task description on timer should be truncated so it shows 2 rows max @done (4/11/2020, 9:44:32 PM)
+    ✔ Timer container should have a max and min height to keep the timer "dropdown" in a consisten height when opening and closing. @done (4/11/2020, 9:44:40 PM)
+    ☐ Tasks in MyTasks section should have the option to read more if text is longer than 2 rows(truncation should be applied as well)
+    ☐ Handle Responsiveness of elements including repositioning of page sections on smaller screens
+    ☐ ToDo tasks should be displayed before completed tasks when sorted
+    ☐ When selecting a task date the date picker stays open affecting the task below it when updated(even when sorted). possible solution for this and additional tasks that are "disappearing" when moved to another week is to update the state of the task's date only when the date picker is closed.
+    ☐ When a task duration is longer than the time slots available in the weekly day schedule, there should be some kind of visual representation for the user to see. 
+    ☐ Tag picker does not empty after creating a new task
+    ☐ Weekly Schedule Issues:
+         ✔ Show line on weekly day schedule to indicate time of day and scroll to that line on load. @done (4/9/2020, 8:58:22 PM)
+         ✔ Events are not showing based on the week, they just show on "every" week @done (4/10/2020, 2:22:11 PM)
+         ☐ When another task is set for the same time/some of the time another task is schedule, there's no visual indication of that.
+         ☐ Update day time line position based on timer(no force scrolling in each update)
+         ✔ When events are really close to one another one removes the other(something with the algorithm for showing events make it ignore one of the events) @done (4/17/2020, 1:00:29 AM)
+         ☐ Annoying day schedule scroll on every state change that's related to the dates. Scroll should only change on load.
+         ✔ When event duration is 1 hours and less the event type icon hides the title @done (4/10/2020, 5:28:10 PM)
+         ✔ title of event needs to be truncated in case text is too long(displayed fully in a tooltip instead) @done (4/10/2020, 5:46:36 PM)
+         ✔ User can still create events in uneven times of minutes messing up the rowMerge. Need to replace add task form duration selection to fixed half hour intervals options. @done (4/11/2020, 11:28:24 AM)
+         ✔ need to add routines to schedule @done (4/11/2020, 5:45:36 PM)
+
+ToDo:
+    ✔ Tasks Edit - need to add duration editing functionality @done (4/1/2020, 10:59:59 PM)
+    ✔ Web + Desktop Notification when closest task is about to begin @done (4/3/2020, 4:34:30 PM)
+    ✔ Page dates current week view + functionality of chnaging the dates and the tasks of that week based on the week the user navigates to @done (4/3/2020, 10:22:51 PM)
+    ✔ Info tooltip for routines and task forms @done (4/4/2020, 12:54:26 AM)
+    ✔ Task started in-app notification toast with option to cancel the beginning of working time @done (4/4/2020, 1:39:36 AM)
+    ✔ Create Tags Picker that allows the user to both create a new tag as well as select an existing one all within one field inside the Add Task Form component @done (4/3/2020, 12:22:03 PM)
+    ☐ Move GoogleCalendarAuth to tasks page component
+    ☐ Date range color change when passed the date
+    ☐ Profile Settings 'Save Changes' validation for choosing the right image format/text changes for name and email
+    ☐ Validation messegas for login & sign up

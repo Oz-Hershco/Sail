@@ -1,0 +1,109 @@
+@import "./Settings.scss";
+
+.AddRoutineForm-Content-Container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.AddRoutineForm-Header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.AddRoutineForm-title {
+  color: $gray-blue;
+  font-weight: 400;
+  font-size: $normal-font;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.AddRoutineForm-Header .Sail-info-icon {
+  margin-left: 0.5em;
+}
+
+.AddRoutineForm-title-howlong {
+  color: $gray-blue;
+  font-weight: 400;
+  font-size: $normal-font;
+}
+
+.AddRoutineForm-title-howlong {
+  margin-top: 2em;
+}
+
+.AddRoutineForm-textfield {
+  color: $dark-blue !important;
+}
+
+.AddRoutineForm-Content-Container .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.AddRoutineForm-DatePicker-textfield {
+  width: 100%;
+  padding-left: 0.7em;
+  margin-bottom: 1em;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  color: $gray-blue;
+}
+
+.AddRoutineForm-textfield,
+.AddRoutineForm-AddRoutineBtn,
+.AddRoutineForm-DatePicker-textfield,
+.AddRoutineForm-duration-textfield input {
+  height: 3em;
+}
+
+.AddRoutineForm-textfield::placeholder,
+.AddRoutineForm-DatePicker-textfield::placeholder {
+  color: lighten($color: $gray-blue, $amount: 50%);
+}
+
+.AddRoutineForm-duration-label {
+  display: inline-block;
+  margin-left: 1.5em;
+  margin-top: 0.7em;
+}
+
+.AddRoutineForm-duration-textfield {
+  width: 8em !important;
+  margin-bottom: 1em;
+  float: right;
+  border: 1px solid $light-gray;
+  border-radius: 0.25rem;
+}
+
+.AddRoutineForm-duration-textfield input {
+  font-size: $small-font;
+  text-align: center;
+  color: $dark-blue;
+  letter-spacing: 2px;
+}
+
+.AddRoutineForm-AddRoutineBtn {
+  color: $light-gray !important;
+  background-color: $dark-blue !important;
+  border-color: $dark-blue !important;
+  font-size: $normal-font !important;
+  font-weight: 400 !important;
+  margin-top: 1em;
+}
+
+.AddRoutineForm-AddRoutineBtn:disabled {
+  cursor: auto;
+}
+
+.AddRoutineForm-dayRadioBtn {
+  display: none;
+}
+
+.AddRoutineForm-dayRadioBtn-img {
+  margin-right: 0.5em;
+  cursor: pointer;
+}

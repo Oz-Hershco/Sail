@@ -1,0 +1,109 @@
+@import "./Settings.scss";
+
+.LoginPage {
+    background-image: -webkit-linear-gradient(165deg, $dark-blue 50%, $white 50%);
+    height: 100vh;
+    padding-top: 10em;
+}
+
+.LoginPage-Logo {
+    width: auto;
+    height: 19em;
+    margin-top: 7em;
+}
+
+.LoginPage-title {
+    color: $light-gray;
+    font-weight: 400;
+    font-size: $big-title;
+    text-align: center;
+    margin-bottom: 0.3em;
+    animation-name: LoginPagePageTitleAnimation;
+    animation-duration: .7s;
+}
+
+@keyframes LoginPagePageTitleAnimation {
+    from {
+        margin-left: -3em;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.LoginPage-textfield-label {
+    color: $light-gray;
+    font-weight: 300;
+    font-size: $normal-font;
+}
+
+.LoginPage-textfield,
+.LoginPage-SignInBtn,
+.LoginPage-LoginwithgoogleBtn {
+    height: 3em;
+    color: $dark-blue !important;
+}
+
+.LoginPage-textfield::placeholder {
+    color: lighten($color: $gray-blue, $amount: 50%);
+}
+
+.LoginPage-RemembermeCheckbox .form-check-input {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.LoginPage-RemembermeCheckbox .form-check-label {
+    color: $light-gray;
+    font-size: $small-font;
+    font-weight: 300;
+    margin-left: 1em;
+}
+
+.LoginPage-RecoverPasswordLink,
+.LoginPage-RecoverPasswordLink:hover,
+.LoginPage-signuplink,
+.LoginPage-signuplink:hover {
+    color: $purple;
+    font-size: $small-font;
+    font-weight: 400;
+}
+
+.LoginPage-SignInBtn {
+    color: $light-gray !important;
+    background-color: $purple !important;
+    border-color: $purple !important;
+    font-size: $normal-font !important;
+    font-weight: 400 !important;
+    margin-top: 1em;
+}
+
+.LoginPage-ORseperator {
+    color: $light-gray;
+    margin-top: 1em;
+    text-align: center;
+    font-size: $small-font !important;
+    font-weight: 300 !important;
+}
+
+.LoginPage-LoginwithgoogleBtn {
+    color: $dark-blue !important;
+    background-color: $light-gray !important;
+    border-color: $light-gray !important;
+    font-size: $normal-font !important;
+    font-weight: 500 !important;
+}
+
+.LoginPage-LoginwithgoogleBtnIcon {
+    width: auto;
+    height: 1.3em;
+    margin-right: 0.4em;
+}
+
+.LoginPage-hr {
+    background-color: $light-gray;
+    opacity: 0.3;
+    margin-top: 2em;
+}
